@@ -1,0 +1,10 @@
+# The .gitconfig file is a configuration file used by Git to store user-specific and global settings. It is located in the user's home directory (~/.gitconfig on Unix-like systems, or %USERPROFILE%\.gitconfig on Windows). This file allows users to set various options and preferences for their Git usage.
+
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[pull]
+	rebase = false
+
+# Configure Commit username and email
+git config --global user.name ""
+git config --global user.email ""

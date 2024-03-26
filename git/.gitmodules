@@ -1,0 +1,9 @@
+[submodule "path"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+[submodule "path"]
+	path = tpm
+	url = https://github.com/tmux-plugins/tpm.git
+[submodule "path"]
+	path = nvim
+	url = https://github.com/NvChad/NvChad
