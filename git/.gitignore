@@ -1,10 +1,10 @@
-
 # Project files like
 dist/
 dist-ssr/
 .ssh
 tests/
 test/
+.vscode/
 
 # Auto-generated files
 config/zsh/.zcompcache/*
