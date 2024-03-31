@@ -1,0 +1,25 @@
+{
+  "name": "awesomescripts",
+  "version": "10.0.1",
+  "description": "Special Repo for Custom Scripts and Offensive / Biased Programs of Various Programming Languages.",
+  "main": "main.sh",
+  "scripts": {
+    "test": "echo Tests are passing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/offensive-vk/AwesomeScripts.git"
+  },
+  "keywords": [
+    "bash",
+    "shell scripts",
+    "c/c++",
+    "python"
+  ],
+  "author": "Vedansh <https://github.com/offensive-vk/>",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/offensive-vk/AwesomeScripts/issues"
+  },
+  "homepage": "https://github.com/offensive-vk/AwesomeScripts#readme"
+}
