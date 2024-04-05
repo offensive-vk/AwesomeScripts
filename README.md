@@ -8,10 +8,10 @@ For Any Information About Contribution Guidelines and Documentation of This Proj
 
 ### Please Refer to
 
-- [Code of Conduct 🤗](https://github.com/offensive-vkAwesomeScripts/blob/master/code_of_conduct.md)
-- [Documentation 📖](https://github.com/offensive-vkAwesomeScripts/blob/master/readme.md) *(Current File)*
-- [Contribution Guidelines ✨](https://github.com/offensive-vkAwesomeScripts/blob/master/contributing.md)
-- [Security Guidelines ⚠️](https://github.com/offensive-vkAwesomeScripts/blob/master/security.md)
+- [Code of Conduct 🤗](https://github.com/offensive-vk/AwesomeScripts/blob/master/code_of_conduct.md)
+- [Documentation 📖](https://github.com/offensive-vk/AwesomeScripts/blob/master/readme.md) *(Current File)*
+- [Contribution Guidelines ✨](https://github.com/offensive-vk/AwesomeScripts/blob/master/contributing.md)
+- [Security Guidelines ⚠️](https://github.com/offensive-vk/AwesomeScripts/blob/master/security.md)
 - [Author 🧑‍💻](https://github.com/offensive-vk/)
 
 ## Templates Includes
