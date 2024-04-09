@@ -1,6 +1,7 @@
 # ==================================
 *.md linguist-language=Markdown
-*.md linguist-detectable=true
+*.md linguist-detectable=false
 *.yml linguist-detectable=true
 *.yml linguist-documentation=false
+* eol=lf text=auto
 # ==================================
