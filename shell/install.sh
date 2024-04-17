@@ -60,6 +60,7 @@ basic_tools=(
     "toilet"
     "figlet"
     "tar"
+    "btop"
     "nano"
 )
 
@@ -72,11 +73,17 @@ advanced_tools=(
     "whois"
     "speedtest-cli"
     "tor"
+    "nikto"
+    "wpscan"
+    "gobuster"
+    "sublist3r"
+    "searchsploit"
+    "ptunnel"
+    "amass"
 )
 # List of additional tools
 additional_tools=(
     "exiftool"
-    "img2txt"
     "cmatrix"
     "espeak"
     "asciiquarium"
@@ -108,6 +115,11 @@ networking_tools=(
     "ping"
     "wireshark"
     "tcpdump"
+    "tshark"
+    "iftop"
+    "hping3"
+    "masscan"
+    "whatweb"
 )
 # Main menu
 echo -e "\n:::::::::::::::::::::::::::::::::::::\n"
