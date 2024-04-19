@@ -50,15 +50,11 @@ Contributions to this repository are welcome! If you'd like to contribute:
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Create a new Pull Request.
 
-## License
-
-This project is licensed under the [MIT License](https://mit-license.org/).
-
 ---
 
 <p align="center">
   <i>&copy; <a href="https://github.com/offensive-vk/">Vedansh</a> 2023 - Present</i><br>
-  <i>Licensed under <a href="https://mit-license.org/">MIT</a></i><br>
+  <i>Licensed under <a href="https://github.com/offensive-vk/AwesomeScripts#CC0-1.0-1-ov-file">CC0-1.0</a></i><br>
   <a href="https://github.com/npm-run-test"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" alt="octocat" /></a><br>
   <sup>Thanks for visiting :)</sup>
 </p>
