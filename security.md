@@ -9,4 +9,3 @@ This Repository is completely for educational purposes only.
 You alone bear responsibility for any damage incurred on your system resulting from the execution of our code or any program, especially if its purpose is not understood beforehand.
 
 Keep Working and Report Your Issue [here](https://github.com/offensive-vk/AwesomeScripts/issues).
-

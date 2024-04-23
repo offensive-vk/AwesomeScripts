@@ -32,6 +32,16 @@ For Any Information About Contribution Guidelines and Documentation of This Proj
   - Pull Request Template
   - Issue Templates
 
+- Github Actions
+  - Node.js Workflows
+    - Ubuntu
+    - Windows
+    - Macos
+  - Verify Assets
+  - Codeql by Github
+  - Docker Image - Build and Push
+  - Custom Workflows 
+  
 ## Custom Scripts and Source Codes
 
 This repository also hosts custom shell scripts, C/C++ source codes, and programs in other languages. Below are some examples:
