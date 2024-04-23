@@ -1,6 +1,8 @@
 # AwesomeScripts - Custom Configs and Various Templates.
 
 Special Repo for Custom Scripts and Offensive / Biased Programs of Various Programming Languages.
+Kindly Double Check and Verify twice before running or executing any script or file in your computer.
+I would say try everything in a sandbox environment. *(VMs or Containers)*
 
 ## Quick Links and Navigation 🧭
 
