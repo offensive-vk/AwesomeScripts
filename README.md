@@ -1,6 +1,8 @@
-# AwesomeScripts - Something Different
+# AwesomeScripts - Custom Configs and Various Templates.
 
 Special Repo for Custom Scripts and Offensive / Biased Programs of Various Programming Languages.
+Kindly Double Check and Verify twice before running or executing any script or file in your computer.
+I would say try everything in a sandbox environment. *(VMs or Containers)*
 
 ## Quick Links and Navigation 🧭
 
@@ -8,6 +10,7 @@ For Any Information About Contribution Guidelines and Documentation of This Proj
 
 ### Please Refer to
 
+- [Directory Structure 🧭](https://github.com/offensive-vk/AwesomeScripts/blob/master/navigation.md)
 - [Code of Conduct 🤗](https://github.com/offensive-vk/AwesomeScripts/blob/master/code_of_conduct.md)
 - [Documentation 📖](https://github.com/offensive-vk/AwesomeScripts/blob/master/readme.md) *(Current File)*
 - [Contribution Guidelines ✨](https://github.com/offensive-vk/AwesomeScripts/blob/master/contributing.md)
@@ -31,6 +34,17 @@ For Any Information About Contribution Guidelines and Documentation of This Proj
   - Code of Conduct
   - Pull Request Template
   - Issue Templates
+
+- Github Actions
+  - Node.js Workflows
+    - Ubuntu
+    - Windows
+    - Macos
+  - Verify Assets
+  - Codeql by Github
+  - NPM Workflows
+  - Docker Image - Build and Push
+  - Custom Workflows 
 
 ## Custom Scripts and Source Codes
 
