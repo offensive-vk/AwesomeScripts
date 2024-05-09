@@ -21,7 +21,7 @@ RUN apt install -y \
 	sudo  
 	
 RUN curl https://raw.githubusercontent.com/offensive-vk/AwesomeScripts/master/shell/install.sh -o install.sh
-RUN	chmod +x install.sh 
+RUN chmod +x install.sh 
 
 # Advanced Tools.
 RUN apt install -y \
