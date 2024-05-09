@@ -22,7 +22,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Image for Platforms - macOS, Windows, Linux
       run: |
-        docker buildx build create multi-plaform 
+        docker buildx create multi-plaform 
         docker buildx use multi-platform
         docker buildx build --platform linux/amd64,windows/amd64,macos/amd64 -t awesomescripts:latest .
         echo "Complete."
