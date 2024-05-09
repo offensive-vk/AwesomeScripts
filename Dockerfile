@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 # =========================
 
-ARG PYTHON_VERSION=3.11.8
+ARG PYTHON_VERSION=3.12.3
 FROM python:${PYTHON_VERSION}-slim as base
 LABEL maintainer="Vedansh <https://github.com/offensive-vk>"
 LABEL repository_name="AwesomeScripts"
