@@ -4,18 +4,25 @@ on:
   schedule:
     - cron: '10 0 * * *'
   push:
-    branches: [ "master", "main" ]
+    branches: [ "master", "*"]
   pull_request:
-    branches: [ "master", "main" ]
+    branches: [ "master", "*" ]
   workflow_dispatch:
 
 jobs:
-
-  build:
-
+  single-platform:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
+    - name: Build the Docker Image - Single Platform
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+  multi-platform:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Image for Platforms - macOS, Windows, Linux
+      run: |
+        docker buildx build create --name multi-plaform --platform linux/amd64,windows/amd64,macos/amd64
+        docker buildx use multi-platform
+        docker buildx build -t awesomescripts .
+        echo "Complete."
