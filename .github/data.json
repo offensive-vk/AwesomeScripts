@@ -1,5 +1,6 @@
 {
     "data": "present",
     "path": "../",
-    "gh-actions": true
+    "gh-actions": true,
+    "docker": "Docker.io"
 }
