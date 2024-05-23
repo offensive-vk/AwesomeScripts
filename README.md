@@ -1,4 +1,4 @@
-# AwesomeScripts - Custom Configs and Various Templates.
+# AwesomeScripts - Custom Configs and Various Templates
 
 Special Repo for Custom Scripts and Offensive / Biased Programs of Various Programming Languages.
 Kindly Double Check and Verify twice before running or executing any script or file in your computer.
@@ -39,12 +39,13 @@ For Any Information About Contribution Guidelines and Documentation of This Proj
   - Node.js Workflows
     - Ubuntu
     - Windows
-    - Macos
+    - macOS
   - Verify Assets
-  - Codeql by Github
+  - CodeQL by Github
   - NPM Workflows
   - Docker Image - Build and Push
-  - Custom Workflows 
+  - Custom Workflows
+  - and More !
 
 ## Custom Scripts and Source Codes
 
