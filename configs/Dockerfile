@@ -18,7 +18,7 @@ RUN apt install -y \
 	neofetch \
 	git \
 	w3m \ 
-	sudo  
+	sudo
 	
 RUN curl https://raw.githubusercontent.com/offensive-vk/AwesomeScripts/master/shell/install.sh -o install.sh
 RUN chmod +x install.sh 
@@ -33,7 +33,6 @@ RUN apt install -y \
 	sqlmap \
 	whatweb \
 	iftop \
-	ping \
 	netcat \
 	tor \
 	cmatrix \
@@ -47,3 +46,4 @@ ENTRYPOINT ["/bin/bash"]
 LABEL date="May, 2024 19:10:00PM IST"
 LABEL description="Personalized Kali Linux Docker Image for Instant Operations."
 LABEL maintainer="Vedansh <superuser.ntsystems@outlook.com>"
+LABEL source="https://raw.githubusercontent.com/offensive-vk/AwesomeScripts/master/configs/Dockerfile"

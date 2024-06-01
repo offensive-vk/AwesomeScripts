@@ -2,13 +2,14 @@
 
 # Special Script For Installing Necessary Tools of Mine.
 echo -e "\n:::::::::::::::::::::::::::::::::::::\n"
-echo -e "\n\t Welcome To Custom Script ! \t\n"
-echo -e "\n\t By @ Vedansh \n"
+echo -e "\n\t Welcome To Custom Install Script ! \t\n"
+echo -e "\n\t By @offensive-vk (Vedansh) \n"
+echo -e "\n\t Source: https://github.com/offensive-vk/AwesomeScripts/blob/master/shell/install.sh \t\n"
 echo -e "\n:::::::::::::::::::::::::::::::::::::\n"
 sleep 2
 
 # Update and upgrade installed packages.
-#sudo apt update && sudo apt upgrade -y
+# sudo apt update && sudo apt upgrade -y
 
 # Function to install basic tools
 install_basic_tools() {
@@ -63,7 +64,6 @@ basic_tools=(
     "btop"
     "nano"
 )
-
 # List of advanced tools
 advanced_tools=(
     "htop"
@@ -112,7 +112,6 @@ networking_tools=(
     "net-tools"
     "netcat"
     "airmon-ng"
-    "ping"
     "wireshark"
     "tcpdump"
     "tshark"
@@ -131,7 +130,7 @@ echo -e "\t 3. Additional Tools"
 echo -e "\t 4. Networking Tools"
 echo -e "\t 5. Developer's Stuff"
 echo -e "\n:::::::::::::::::::::::::::::::::::::\n"
-read -p "What do you want? (0-5) ~: " choice
+read -p "What do you want ? (0-5) : " choice
 sleep 3
 case "$choice" in
     1)
