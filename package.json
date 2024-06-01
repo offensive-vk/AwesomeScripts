@@ -1,7 +1,7 @@
 {
   "name": "awesomescripts",
-  "version": "10.0.1",
-  "description": "Special Repo for Custom Scripts and Offensive / Biased Programs of Various Programming Languages.",
+  "version": "12.0.0",
+  "description": "Custom Scripts and Offensive / Biased Programs of Various Programming Languages.",
   "main": "main.py",
   "scripts": {
     "dev": "python3 main.py",

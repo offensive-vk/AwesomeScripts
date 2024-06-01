@@ -22,7 +22,6 @@ dbaeumer.vscode-eslint
 devsense.composer-php-vscode
 devsense.intelli-php-vscode
 devsense.phptools-vscode
-digitalbrainstem.javascript-ejs-support
 donjayamanne.githistory
 donjayamanne.jquerysnippets
 donjayamanne.python-environment-manager
@@ -94,6 +93,7 @@ mtxr.sqltools
 oderwat.indent-rainbow
 pkief.material-icon-theme
 pushqrdx.inline-html
+quicktype.quicktype
 rapidapi.vscode-rapidapi-client
 rapidapi.vscode-services
 redhat.java
@@ -115,7 +115,6 @@ thorerik.hacker-theme
 unifiedjs.vscode-mdx
 usernamehw.errorlens
 ustymukhman.matrix-theme
-vadimcn.vscode-lldb
 virejdasani.incredibly-in-your-face
 visualstudioexptteam.intellicode-api-usage-examples
 visualstudioexptteam.vscodeintellicode
