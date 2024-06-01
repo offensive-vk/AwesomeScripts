@@ -19,7 +19,8 @@ RUN apt install -y \
 	git \
 	w3m \ 
 	sudo
-	
+
+# Install necessary scripts.
 RUN curl https://raw.githubusercontent.com/offensive-vk/AwesomeScripts/master/shell/install.sh -o install.sh
 RUN chmod +x install.sh 
 
