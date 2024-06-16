@@ -1,6 +1,7 @@
 # AwesomeScripts - Custom Configs and Various Templates
 
 Special Repo for Custom Scripts and Offensive / Biased Programs of Various Programming Languages.
+More Tool Configs are being added. Stay tuned for future updates.!
 Kindly Double Check and Verify twice before running or executing any script or file in your computer.
 I would say try everything in a sandbox environment. *(VMs or Containers)*
 
@@ -36,6 +37,11 @@ For Any Information About Contribution Guidelines and Documentation of This Proj
   - Issue Templates
 
 - Github Actions
+  - Auto Labeler
+  - Simple Labeler
+  - Dependabots
+  - Dependency Reviews
+  - Flawfinder
   - Node.js Workflows
     - Ubuntu
     - Windows
@@ -46,6 +52,13 @@ For Any Information About Contribution Guidelines and Documentation of This Proj
   - Docker Image - Build and Push
   - Custom Workflows
   - and More !
+
+- Custom Configs
+  - Dockerfile
+  - VS Code Extensions (140+)
+  - jsconfig
+  - tsconfig
+  - VS Code Settings
 
 ## Custom Scripts and Source Codes
 
