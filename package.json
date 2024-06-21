@@ -1,11 +1,12 @@
 {
   "name": "awesomescripts",
   "version": "12.0.0",
-  "description": "Custom Scripts and Offensive / Biased Programs of Various Programming Languages.",
+  "description": "Custom Scripts and Biased Programs of Various Programming Languages.",
   "main": "main.py",
   "scripts": {
     "dev": "python3 main.py",
-    "test": "echo Tests are passing"
+    "test": "echo Tests are turned off.",
+    "build": "echo Builds are turned off."
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,8 @@
     "shell scripts",
     "c/c++",
     "python",
-    "yaml"
+    "yaml",
+    "markdown"
   ],
   "author": "Vedansh <https://github.com/offensive-vk/>",
   "license": "CC0-1.0",
