@@ -13,16 +13,15 @@ async def handle(request):
 async def start_background_tasks(app):
     # This function runs the background task
     async def background_task():
-        print(f"\n\t Dayum ! Server is running on http://localhost:8000/")
+        print(f"\n\t Gracias ! Server is running on http://localhost:8000/")
         await asyncio.sleep(1)
         print(f"\n\t Please Wait .... ")
 
         for i in tqdm(range(6), desc="Processing"):
-            # Simulating some time-consuming operation
             sleep(0.1)
         
         await asyncio.sleep(1)
-        print(f"\n\t >>> Jobs Done ! <<< \n")
+        print(f"\n\t >>> All Jobs Done ! <<< \n")
 
     app['background_task'] = asyncio.create_task(background_task())
 
