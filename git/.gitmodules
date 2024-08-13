@@ -7,3 +7,6 @@
 [submodule "path"]
 	path = nvim
 	url = https://github.com/NvChad/NvChad
+[submodule "github-actions"]
+	path = ./github-actions
+	url = https://github.com/offensive-vk/AwesomeScripts/tree/master/gh-actions
