@@ -53,9 +53,9 @@ For Any Information About Contribution Guidelines and Documentation of This Proj
   - Custom Workflows
   - and More !
 
-- Custom Configs
+- My Personal Configs
   - Dockerfile
-  - VS Code Extensions (140+)
+  - VS Code Extensions (145+)
   - jsconfig
   - tsconfig
   - VS Code Settings
