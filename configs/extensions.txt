@@ -3,6 +3,7 @@ ahmadawais.shades-of-purple
 ajshortt.tokyo-hack
 alefragnani.bookmarks
 alphabotsec.vscode-eclipse-keybindings
+angular.ng-template
 anseki.vscode-color
 aslamanver.vsc-export
 astro-build.astro-vscode
@@ -20,7 +21,6 @@ davidanson.vscode-markdownlint
 daylerees.rainglow
 dbaeumer.vscode-eslint
 devsense.composer-php-vscode
-devsense.intelli-php-vscode
 devsense.phptools-vscode
 donjayamanne.githistory
 donjayamanne.jquerysnippets
@@ -47,6 +47,7 @@ github.remotehub
 github.vscode-codeql
 github.vscode-github-actions
 github.vscode-pull-request-github
+gitlab.gitlab-workflow
 gruntfuggly.todo-tree
 hbenl.vscode-test-explorer
 hediet.debug-visualizer
@@ -55,13 +56,14 @@ helixquar.randomeverything
 hkh12.pitch-black
 hossaini.bootstrap-intellisense
 idbartosz.darkpp-italic
+jameswain.gitlab-pipelines
 jeff-hykin.better-cpp-syntax
-jeff-hykin.polacode-2019
 johnpapa.vscode-peacock
 johnpapa.winteriscoming
 max-ss.cyberpunk
 meezilla.json
 mgmcdermott.vscode-language-babel
+mhutchie.git-graph
 michelemelluso.code-beautifier
 microprofile-community.mp-rest-client-generator-vscode-ext
 microprofile-community.mp-starter-vscode-ext
@@ -101,8 +103,6 @@ quicktype.quicktype
 rapidapi.vscode-rapidapi-client
 rapidapi.vscode-services
 redhat.java
-redhat.vscode-microprofile
-redhat.vscode-quarkus
 redhat.vscode-xml
 redhat.vscode-yaml
 ritwickdey.liveserver
@@ -113,6 +113,7 @@ sidthesloth.html5-boilerplate
 silofy.hackthebox
 solvable.shades
 streetsidesoftware.code-spell-checker
+supermaven.supermaven
 syler.sass-indented
 tamasfe.even-better-toml
 thomaspink.theme-github
@@ -127,19 +128,18 @@ visualstudioexptteam.intellicode-api-usage-examples
 visualstudioexptteam.vscodeintellicode
 vitest.explorer
 vmware.vscode-boot-dev-pack
-vmware.vscode-spring-boot
 vscjava.vscode-gradle
 vscjava.vscode-java-debug
 vscjava.vscode-java-dependency
 vscjava.vscode-java-pack
 vscjava.vscode-java-test
 vscjava.vscode-maven
-vscjava.vscode-spring-boot-dashboard
 vscjava.vscode-spring-initializr
 vscode-icons-team.vscode-icons
 whizkydee.material-palenight-theme
 wix.vscode-import-cost
 xabikos.javascriptsnippets
+yoavbls.pretty-ts-errors
 zainchen.json
 zhuangtongfa.material-theme
 zobo.php-intellisense
