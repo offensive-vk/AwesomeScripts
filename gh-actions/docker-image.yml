@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '10 0 * * *'
   push:
-    branches: [ "master", "*" ]
+    branches: [ "*" ]
   pull_request:
     branches: [ "master" ]
   workflow_dispatch:
