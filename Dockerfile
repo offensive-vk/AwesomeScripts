@@ -3,9 +3,11 @@
 
 ARG PYTHON_VERSION=3.12.3
 FROM python:${PYTHON_VERSION}-slim as base
+
 LABEL maintainer="Vedansh <https://github.com/offensive-vk>"
 LABEL repository_name="AwesomeScripts"
 LABEL url="https://github.com/offensive-vk/AwesomeScripts"
+LABEL email="superuser.ntsystems@outlook.com"
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
