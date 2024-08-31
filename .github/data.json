@@ -1,6 +1,8 @@
 {
-    "data": "present",
+    "data": "live",
+    "branch": "master",
     "path": "../",
     "gh-actions": true,
-    "docker": "Docker.io"
+    "docker": "Docker.io",
+    "workflow_dir": ".github/workflows/"
 }

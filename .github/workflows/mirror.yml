@@ -1,7 +1,7 @@
 name: CI / Gitlab Mirror Sync
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 */1 * * *'
   push: 
     branches: ["*"]
   workflow_dispatch:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Gitlab Repo Sync
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         fetch-depth: 0
     - uses: wangchucheng/git-repo-sync@v0.1.0
