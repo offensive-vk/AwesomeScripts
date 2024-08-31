@@ -3,10 +3,10 @@ name: "Hello World"
 run-name: Github Actions by ${{ github.actor }} 
 
 on:
-    push:
-        branches: ["production", "main"]
-    pull_request:
-        branches: ["production", "main"]
+  push:
+      branches: ["production", "main"]
+  pull_request:
+      branches: ["production", "main"]
 
 jobs:
     say_hello:
@@ -25,3 +25,6 @@ jobs:
             
             - name: Good evening
               run: echo ${{ github.actor }} says Good evening!
+
+            - name: Good night
+              run: echo ${{ github.actor }} says Good night!

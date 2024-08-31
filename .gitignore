@@ -1,6 +1,7 @@
 # ==========
 .vscode/
-.dist/
+dist/
 test/
 tests/
+node_modules/
 # ==========
