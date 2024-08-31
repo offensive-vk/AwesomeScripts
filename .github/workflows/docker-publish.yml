@@ -9,7 +9,7 @@ on:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: ntsystems/awesomescripts
+  IMAGE_NAME: ${{ secrets.DOCKER_USER }}/${{ secrets.DOCKER_TOKEN }}
 
 jobs:
   docker:
@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install cosign
         if: github.event_name != 'pull_request'
