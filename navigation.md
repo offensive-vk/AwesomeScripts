@@ -14,13 +14,13 @@
 
 6. [shell](https://github.com/offensive-vk/AwesomeScripts/tree/master/shell) - For Shell Scripts
 
-7. [python](https://github.com/offensive-vk/AwesomeScripts/tree/master/python) - For Python Scripts. (*Coming Soon.*)
+7. [python](https://github.com/offensive-vk/AwesomeScripts/tree/master/python) - For Python Scripts. 
 
 ---
 
 <p align="center">
   <i>&copy; <a href="https://github.com/offensive-vk/">Vedansh</a> 2023 - Present</i><br>
   <i>Licensed under <a href="https://github.com/offensive-vk/AwesomeScripts#CC0-1.0-1-ov-file">CC0-1.0</a></i><br>
-  <a href="https://github.com/npm-run-test"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" alt="octocat" /></a><br>
+  <a href="https://github.com/TheHamsterBot"><img src="https://i.ibb.co/4KtpYxb/octocat-clean-mini.png" alt="octocat" /></a><br>
   <sup>Thanks for visiting :)</sup>
 </p>
