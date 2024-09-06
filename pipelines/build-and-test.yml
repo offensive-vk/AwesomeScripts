@@ -1,0 +1,43 @@
+# Base Docker Image to use.
+image: node
+
+# Caching
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - setup
+  - build
+  - test
+  - dev
+
+setup-npm:
+  stage: setup
+  script:
+    - node -v && npm -v
+    - npm i -g npm@latest
+    - npm update
+
+build:
+  stage: build
+  script:
+    - npm install --frozen-lockfile=true
+    - npm run build
+  artifacts:
+    paths:
+      - node_modules/
+
+test:
+  stage: test
+  dependencies:
+    - build
+  script:
+    - npm test
+
+development:
+  stage: dev
+  script: 
+    - echo "Executing Project With npm."
+    - sleep 3
+    - npm start

@@ -1,0 +1,14 @@
+#############################
+# This is simple pipeline that prints a message to the console.
+#############################
+
+stages:
+  - stage: say-hello
+
+say-hello:
+  stage: say-hello
+  script: |
+    echo "Hello, world! - from the pipeline."
+  only:
+    - master
+    - schedule
