@@ -18,7 +18,11 @@
     "c/c++",
     "python",
     "yaml",
-    "markdown"
+    "markdown",
+    "pipelines",
+    "github actions",
+    "github",
+    "gitlab"
   ],
   "author": "Vedansh <https://github.com/offensive-vk/>",
   "license": "CC0-1.0",

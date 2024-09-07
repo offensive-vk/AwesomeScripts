@@ -6,12 +6,14 @@ cache:
   paths:
     - node_modules/
 
+# Define the Stages
 stages:
   - setup
   - build
   - test
   - dev
 
+# Setup dependencies
 setup-npm:
   stage: setup
   script:
@@ -19,6 +21,7 @@ setup-npm:
     - npm i -g npm@latest
     - npm update
 
+# Build the project
 build:
   stage: build
   script:
@@ -28,6 +31,7 @@ build:
     paths:
       - node_modules/
 
+# Test the project
 test:
   stage: test
   dependencies:
@@ -35,6 +39,7 @@ test:
   script:
     - npm test
 
+# Start final development server
 development:
   stage: dev
   script: 

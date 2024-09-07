@@ -11,4 +11,3 @@ say-hello:
     echo "Hello, world! - from the pipeline."
   only:
     - master
-    - schedule

@@ -1,0 +1,21 @@
+stages:
+  - build
+  - run
+
+variables:
+  DOCKER_IMAGE: $CI_PROJECT_NAME
+  DOCKER_TAG: latest
+
+build:
+  stage: build
+  script:
+    - docker build -t $DOCKER_IMAGE:$DOCKER_TAG .
+  only:
+    - main
+
+run:
+  stage: run
+  script:
+    - docker run -p 8080:80 $DOCKER_IMAGE:$DOCKER_TAG
+  only:
+    - main
