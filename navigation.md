@@ -14,7 +14,9 @@
 
 6. [shell](https://github.com/offensive-vk/AwesomeScripts/tree/master/shell) - For Shell Scripts
 
-7. [python](https://github.com/offensive-vk/AwesomeScripts/tree/master/python) - For Python Scripts. 
+7. [python](https://github.com/offensive-vk/AwesomeScripts/tree/master/python) - For Python Scripts.
+
+8. [pipelines](https://github.com/offensive-vk/AwesomeScripts/tree/master/pipelines) - For CI/CD Pipelines
 
 ---
 

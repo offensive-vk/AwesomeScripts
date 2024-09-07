@@ -1,0 +1,21 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - pip install -r requirements.txt
+    - python setup.py sdist
+  artifacts:
+    paths:
+      - dist/
+
+deploy:
+  stage: deploy
+  script:
+    - pip install twine
+    - twine upload dist/*
+  environment:
+    name: production
+    url: https://example.com

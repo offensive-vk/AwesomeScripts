@@ -38,10 +38,10 @@ For Any Information About Contribution Guidelines and Documentation of This Proj
 
 - Github Actions
   - Auto Labeler
-  - Simple Labeler
-  - Dependabots
   - Dependency Reviews
-  - Flawfinder
+  - Flawfinder - Code Scanning
+  - Checkout Cheat Sheet
+  - Repo Mirroring
   - Node.js Workflows
     - Ubuntu
     - Windows
@@ -59,6 +59,17 @@ For Any Information About Contribution Guidelines and Documentation of This Proj
   - jsconfig
   - tsconfig
   - VS Code Settings
+
+- Gitlab Pipelines
+  - Introduction
+  - Build and Test
+  - Hello CI
+  - Docker Image CI
+  - Deploy Application CI
+  - Docker CI
+  - More !
+
+- Python Programs
 
 ## Custom Scripts and Source Codes
 
