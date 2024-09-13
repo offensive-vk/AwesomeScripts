@@ -1,3 +1,24 @@
+<div align="center">
+  <a href="https://about.gitlab.com/" target="_blank" rel="noreferrer">
+    <img src="https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/gitlab/gitlab-original.svg" alt="gitlab" width="150" height="150" /> 
+  </a>
+  <a href="https://docker.com/" target="_blank" rel="noreferrer">
+    <img src="https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/docker/docker-original.svg" alt="docker" width="150" height="150" /> 
+  </a>
+  <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="150" height="150" />
+  </a>
+  <a href="https://github.com/features/actions" target="_blank" rel="noreferrer">
+    <img src="https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/githubactions/githubactions-original.svg" alt="actions" width="150" height="150" />
+  </a>
+  <a href="https://www.python.org" target="_blank" rel="noreferrer">
+    <img src="https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/python/python-original.svg" alt="python" width="150" height="150" /> 
+  </a>
+  <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
+    <img src="https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/bash/bash-original.svg" alt="bash" width="150" height="150" /> 
+  </a>
+</div>
+    
 # AwesomeScripts - Custom Configs and Various Templates
 
 Special Repo for Custom Scripts and Offensive / Biased Programs of Various Programming Languages.
