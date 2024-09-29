@@ -22,7 +22,7 @@ RUN adduser \
     --no-create-home \
     --uid "${UID}" \
     appuser
-
+RUN apt-get update && apt-get install -y gcc
 RUN --mount=type=cache,target=/root/.cache/pip \
     --mount=type=bind,source=requirements.txt,target=requirements.txt \
     python -m pip install -r requirements.txt
