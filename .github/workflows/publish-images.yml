@@ -13,10 +13,10 @@ env:
   DOCKER: docker.io
   GITHUB: ghcr.io
   DOCKERHUB: ${{ secrets.DOCKER_USER }}/${{secrets.DOCKER_IMAGE }}
-  GHCR: ghcr.io/offensive-vk/AwesomeScripts
+  GHCR: ghcr.io/offensive-vk/awesomescripts
   USERNAME: ${{ secrets.DOCKER_USER }}
   PASSWORD: ${{ secrets.DOCKER_TOKEN }}
-
+  DOCKERFILE: ./Dockerfile
 jobs:
   push:
     runs-on: ubuntu-latest
@@ -28,12 +28,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
+      - name: Extract Docker metadata
+        id: meta
+        uses: docker/metadata-action@96383f45573cb7f253c731d3b3ab81c87ef81934 # v5.0.0
+        with:
+          images: |
+            ${{ env.DOCKERHUB }}
+            ${{ env.GHCR }}
+          tags: |
+            type=ref,event=pr
+            type=edge
+          flavor: |
+            latest=true
+          labels: |
+            org.opencontainers.image.title=AwesomeScripts
+            org.opencontainers.image.description=Awesome Scripts for Everyone.
+            org.opencontainers.image.vendor=Vedansh
+            
       - name: Install cosign
         if: github.event_name != 'pull_request'
         uses: sigstore/cosign-installer@4959ce089c160fddf62f7b42464195ba1a56d382 #v3.6.0
         with:
           cosign-release: 'v2.1.1'
+          
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
@@ -55,17 +72,16 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Extract Docker metadata
-        id: meta
-        uses: docker/metadata-action@96383f45573cb7f253c731d3b3ab81c87ef81934 # v5.0.0
+      - name: Build & Bake
+        uses: docker/bake-action@v5
         with:
-          images: |
-            ${{ env.DOCKERHUB }}
-            ${{ env.GHCR }}
-          tags: |
-            type=latest
-            type=master
-
+          files: |
+            ${{ steps.meta.outputs.bake-file }}
+          targets: image-all
+          push: ${{ github.event_name != 'pull_request' }}
+        env:
+          DOCKERFILE: ${{ env.DOCKERFILE }}
+          
       - name: Build and Push Image
         id: build-and-push
         uses: docker/build-push-action@0565240e2d4ab88bba5387d719585280857ece09 # v5.0.0
@@ -75,9 +91,21 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           platforms: linux/amd64,linux/arm64,linux/arm/v7
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
 
+      - name: Check Manifests
+        if: github.event_name != 'pull_request'
+        run: |
+          docker buildx imagetools inspect ${{ env.DOCKERHUB }}:${{ steps.meta.outputs.version }}
+          docker buildx imagetools inspect ${{ env.GHCR }}:${{ steps.meta.outputs.version }}
+    
+      - name: Inspect Image
+        if: github.event_name != 'pull_request'
+        run: |
+          docker pull ${{ env.DOCKERHUB }}:${{ steps.meta.outputs.version }}
+          docker image inspect ${{ env.DOCKERHUB }}:${{ steps.meta.outputs.version }}
+          docker pull ${{ env.GHCR }}:${{ steps.meta.outputs.version }}
+          docker image inspect ${{ env.GHCR }}:${{ steps.meta.outputs.version }}
+          
       - name: Sign the Published image
         if: ${{ github.event_name != 'pull_request' }}
         env:
@@ -91,3 +119,4 @@ jobs:
           echo "${{ steps.meta.outputs.tags }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.meta.outputs.labels }} " >> $GITHUB_STEP_SUMMARY
           echo "*** VERIFICATION COMPLETED ***"
+          echo "Job Finished!"
