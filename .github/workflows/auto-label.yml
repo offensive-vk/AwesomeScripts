@@ -1,5 +1,4 @@
-name: Automated Label - Hamster 🐹
-
+name: CI / Automated Label
 on: 
   schedule:
     - cron: '0 */1 * * *'

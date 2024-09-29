@@ -5,9 +5,6 @@
   <a href="https://docker.com/" target="_blank" rel="noreferrer">
     <img src="https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/docker/docker-original.svg" alt="docker" width="150" height="150" /> 
   </a>
-  <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="150" height="150" />
-  </a>
   <a href="https://github.com/features/actions" target="_blank" rel="noreferrer">
     <img src="https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/githubactions/githubactions-original.svg" alt="actions" width="150" height="150" />
   </a>
@@ -16,6 +13,9 @@
   </a>
   <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
     <img src="https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/bash/bash-original.svg" alt="bash" width="150" height="150" /> 
+  </a>
+  <a href="https://www.npmjs.org/" target="_blank" rel="noreferrer">
+    <img src="https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/pnpm/pnpm-original.svg" alt="bash" width="150" height="150" /> 
   </a>
 </div>
     
