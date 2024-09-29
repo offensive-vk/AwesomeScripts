@@ -2,7 +2,7 @@
 # =========================
 
 ARG PYTHON_VERSION=3.12.3
-FROM python:${PYTHON_VERSION}-slim as base
+FROM python:${PYTHON_VERSION}-slim AS base
 
 LABEL maintainer="Vedansh <https://github.com/offensive-vk>"
 LABEL repository="AwesomeScripts"
