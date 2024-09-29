@@ -72,15 +72,15 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build & Bake
-        uses: docker/bake-action@v5
-        with:
-          files: |
-            ${{ steps.meta.outputs.bake-file }}
-          targets: image-all
-          push: ${{ github.event_name != 'pull_request' }}
-        env:
-          DOCKERFILE: ${{ env.DOCKERFILE }}
+      # - name: Build & Bake
+      #   uses: docker/bake-action@v5
+      #   with:
+      #     files: |
+      #       ${{ steps.meta.outputs.bake-file }}
+      #     targets: image-all
+      #     push: ${{ github.event_name != 'pull_request' }}
+      #   env:
+      #     DOCKERFILE: ${{ env.DOCKERFILE }}
           
       - name: Build and Push Image
         id: build-and-push

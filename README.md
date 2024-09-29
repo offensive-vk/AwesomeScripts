@@ -14,9 +14,6 @@
   <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
     <img src="https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/bash/bash-original.svg" alt="bash" width="150" height="150" /> 
   </a>
-  <a href="https://www.npmjs.org/" target="_blank" rel="noreferrer">
-    <img src="https://cdn.jsdelivr.net/gh/offensive-vk/Icons@master/pnpm/pnpm-original.svg" alt="bash" width="150" height="150" /> 
-  </a>
 </div>
     
 # AwesomeScripts - Custom Configs and Various Templates
