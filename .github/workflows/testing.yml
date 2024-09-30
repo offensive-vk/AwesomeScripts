@@ -56,4 +56,4 @@ jobs:
       - name: Inspect Image
         run: |
           docker image inspect ntsystems/awesomescripts:latest
-          docker image inspect offensive-vk/awesomescripts:latest
+          docker image inspect ghcr.io/offensive-vk/awesomescripts:latest
