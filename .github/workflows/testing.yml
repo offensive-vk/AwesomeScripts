@@ -1,4 +1,4 @@
-name: Automated Image Testing
+name: CI / Image Testing
 
 on:
   workflow_dispatch:
@@ -20,7 +20,7 @@ jobs:
         ports:
           - 2375:2375
 
-    name: Begin Image Testing
+    name: Begin Testing
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -52,3 +52,8 @@ jobs:
           docker exec my-container uname -a >> $GITHUB_STEP_SUMMARY
           echo "## Docker Info" >> $GITHUB_STEP_SUMMARY
           docker system info >> $GITHUB_STEP_SUMMARY
+
+      - name: Inspect Image
+        run: |
+          docker image inspect ntsystems/awesomescripts:latest
+          docker image inspect offensive-vk/awesomescripts:latest
