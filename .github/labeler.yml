@@ -1,62 +1,100 @@
 # ** DO NOT MODIFY **
+git:
+  - changed-files:
+      - any-glob-to-any-file:
+        - 'git/*'
+        - '.gitignore'
+        - '.gitattributes'
+        - '.gitmodules'
 ci/cd:
-  - '*.yml'
-  - '.github/workflows/*.yml'
-  - 'Dockerfile'
-  - 'compose.yaml'
+  - changed-files:
+      - any-glob-to-any-file:
+        - '*.yml'
+        - '.github/workflows/*.yml'
+        - 'Dockerfile'
+        - 'compose.yaml'
 
 configs:
-  - 'configs/*'
+  - changed-files:
+      - any-glob-to-any-file:
+        - 'configs/*'
 
 template:
-  - '.github/Auto_Pull_Request.md'
-  - '.github/Auto_Issue_Template.md'
+  - changed-files:
+      - any-glob-to-any-file:
+        - '.github/pull_request_template.md' 
+        - '.github/Auto_Pull_Request.md'
+        - '.github/Auto_Issue_Template.md'
 
 Dockerfile:
-  - 'Dockerfile'
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'Dockerfile'
 
 dotfiles:
-  - '.gitlab-ci.yml'
-  - '.gitignore'
-  - '.gitattributes'
-  - '.dockerignore'
-  - '.npmrc'
-  - 'Dockerfile'
-  - 'LICENSE'
-  - 'package-*.json'
-  - 'pnpm-lock.yaml'
+  - changed-files:
+      - any-glob-to-any-file:
+        - '.gitlab-ci.yml'
+        - '.gitignore'
+        - '.gitattributes'
+        - '.dockerignore'
+        - 'Dockerfile'
+        - 'LICENSE'
+        - 'package-*.json'
+        - 'pnpm-lock.yaml'
+        - '*/**.json'
 
 markdown:
-  - '**/*.md'
-  - './**/*.md'
+  - changed-files:
+      - any-glob-to-any-file:
+        - '**/*.md'
+        - './**/*.md'
 
 devcontainer:
-  - '.devcontainer/*'
+  - changed-files:
+      - any-glob-to-any-file:
+        - '.devcontainer/*'
 
 gh-actions:
-  - 'gh-actions/*'
+  - changed-files:
+      - any-glob-to-any-file:
+        - 'gh-actions/*'
 
 python:
-  - 'python/*'
-  - '**/*.py'
+  - changed-files:
+      - any-glob-to-any-file:
+        - 'python/*'
+        - '**/*.py'
 
 shell:
-  - 'shell/*'
-  - '**/*.sh'
+  - changed-files:
+      - any-glob-to-any-file:
+        - 'shell/*'
+        - '**/*.sh'
 
 npm:
-  - 'npm/*'
-  - '.npmrc'
-  - '.nvmrc'
+  - changed-files:
+      - any-glob-to-any-file:
+        - 'npm/*'
+        - '.npmrc'
+        - '.nvmrc'
 
 legacy:
-  - 'legacy/*'
-  - '**/*.c'
-  - '**/*.cpp'
+  - changed-files:
+      - any-glob-to-any-file:
+        - 'legacy/*'
+        - '**/*.c'
+        - '**/*.cpp'
 
 C/C++:
-  - 'legacy/*'
-  - '**/*.c'
-  - '**/*.cpp'
+  - changed-files:
+      - any-glob-to-any-file:
+        - 'legacy/*'
+        - '**/*.c'
+        - '**/*.cpp'
+pipelines:
+  - changed-files:
+      - any-glob-to-any-file:
+        - 'pipelines/*'
 
 # ** DO NOT MODIFY **

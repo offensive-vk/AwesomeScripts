@@ -28,7 +28,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Extract Docker metadata
+      - name: Extract Docker Metadata
         id: meta
         uses: docker/metadata-action@96383f45573cb7f253c731d3b3ab81c87ef81934 # v5.0.0
         with:
@@ -42,10 +42,9 @@ jobs:
             latest=true
           labels: |
             org.opencontainers.image.title=AwesomeScripts
-            org.opencontainers.image.description=Awesome Scripts for Everyone.
             org.opencontainers.image.vendor=Vedansh
             
-      - name: Install cosign
+      - name: Install Cosign
         if: github.event_name != 'pull_request'
         uses: sigstore/cosign-installer@4959ce089c160fddf62f7b42464195ba1a56d382 #v3.6.0
         with:
@@ -53,10 +52,11 @@ jobs:
           
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@f95db51fddba0c2d1ec667646a06c2ce06100226 # v3.0.0
 
-      - name: Login Into ${{ env.DOCKER }}
+      - name: Login to Dockerhub
         if: github.event_name != 'pull_request'
         uses: docker/login-action@343f7c4344506bcbf9b4de18042ae17996df046d # v3.0.0
         with:
@@ -72,16 +72,6 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      # - name: Build & Bake
-      #   uses: docker/bake-action@v5
-      #   with:
-      #     files: |
-      #       ${{ steps.meta.outputs.bake-file }}
-      #     targets: image-all
-      #     push: ${{ github.event_name != 'pull_request' }}
-      #   env:
-      #     DOCKERFILE: ${{ env.DOCKERFILE }}
-          
       - name: Build and Push Image
         id: build-and-push
         uses: docker/build-push-action@0565240e2d4ab88bba5387d719585280857ece09 # v5.0.0
