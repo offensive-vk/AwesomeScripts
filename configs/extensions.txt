@@ -20,10 +20,10 @@ codium.codium
 davidanson.vscode-markdownlint
 daylerees.rainglow
 dbaeumer.vscode-eslint
+denoland.vscode-deno
 devsense.composer-php-vscode
 devsense.phptools-vscode
 donjayamanne.githistory
-donjayamanne.jquerysnippets
 donjayamanne.python-environment-manager
 donjayamanne.python-extension-pack
 dracula-theme.theme-dracula
@@ -60,7 +60,9 @@ jameswain.gitlab-pipelines
 jeff-hykin.better-cpp-syntax
 johnpapa.vscode-peacock
 johnpapa.winteriscoming
+laurencebahiirwa.deno-std-lib-snippets
 max-ss.cyberpunk
+me-dutour-mathieu.vscode-github-actions
 meezilla.json
 mgmcdermott.vscode-language-babel
 mhutchie.git-graph

@@ -1,5 +1,3 @@
-// Note: This context is an example only. The contents of a context depends on the workflow that you are running. Contexts, objects, and properties will vary significantly under different workflow run conditions.
-
 {
   "token": "*",
   "job": "dump_contexts_to_log",
