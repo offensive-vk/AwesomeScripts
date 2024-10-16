@@ -48,12 +48,6 @@ jobs:
 
       - name: Get System Details
         run: |
-          echo "" >> $GITHUB_STEP_SUMMARY; echo "## Runner Details " >> $GITHUB_STEP_SUMMARY
-          docker exec my-container uname -a >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY; 
           echo "## Docker Info" >> $GITHUB_STEP_SUMMARY
           docker system info >> $GITHUB_STEP_SUMMARY
-
-      - name: Inspect Image
-        run: |
-          docker image inspect ntsystems/awesomescripts:latest
-          docker image inspect ghcr.io/offensive-vk/awesomescripts:latest

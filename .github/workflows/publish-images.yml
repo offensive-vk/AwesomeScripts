@@ -12,8 +12,8 @@ concurrency:
 env:
   DOCKER: docker.io
   GITHUB: ghcr.io
-  DOCKERHUB: ${{ secrets.DOCKER_USER }}/${{secrets.DOCKER_IMAGE }}
-  GHCR: ghcr.io/offensive-vk/awesomescripts
+  DOCKERHUB: ${{ secrets.DOCKER_USER }}/${{ secrets.DOCKER_IMAGE }}
+  GHCR: ghcr.io/${{ github.repository }}
   USERNAME: ${{ secrets.DOCKER_USER }}
   PASSWORD: ${{ secrets.DOCKER_TOKEN }}
   DOCKERFILE: ./Dockerfile
@@ -80,7 +80,7 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          platforms: linux/amd64,linux/arm64,linux/arm/v7
+          platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/amd64/v3
 
       - name: Check Manifests
         if: github.event_name != 'pull_request'
@@ -95,13 +95,6 @@ jobs:
           docker image inspect ${{ env.DOCKERHUB }}:${{ steps.meta.outputs.version }}
           docker pull ${{ env.GHCR }}:${{ steps.meta.outputs.version }}
           docker image inspect ${{ env.GHCR }}:${{ steps.meta.outputs.version }}
-          
-      - name: Sign the Published image
-        if: ${{ github.event_name != 'pull_request' }}
-        env:
-          TAGS: ${{ steps.meta.outputs.tags }}
-          DIGEST: ${{ steps.build-and-push.outputs.digest }}
-        run: echo "Image with ${TAGS} tag has been sucessfully Signed."
 
       - name: Verify Tags and Labels
         run: |
