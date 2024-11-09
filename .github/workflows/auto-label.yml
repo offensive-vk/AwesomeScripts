@@ -1,7 +1,6 @@
 name: CI / Automated Label
+
 on: 
-  schedule:
-    - cron: '0 */1 * * *'
   issues:
     types: [opened, edited]
   pull_request:
@@ -81,10 +80,11 @@ jobs:
       uses: actions/labeler@v5
       with:
         repo-token: ${{ secrets.BOT_TOKEN }}
+        sync-labels: true
 
   finish_cleanup:
     runs-on: ubuntu-latest
+    name: Finish & Cleanup
     needs: [label_issues, label_pull_requests]
     steps:
-    - name: Finish Off & Cleanup
-      run: echo "Successfully labeled all of the open issues and pull requests."
+      - run: echo "Successfully labeled all of the open issues and pull requests."

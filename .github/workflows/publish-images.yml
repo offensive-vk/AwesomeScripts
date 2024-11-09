@@ -13,10 +13,11 @@ env:
   DOCKER: docker.io
   GITHUB: ghcr.io
   DOCKERHUB: ${{ secrets.DOCKER_USER }}/${{ secrets.DOCKER_IMAGE }}
-  GHCR: ghcr.io/${{ github.repository }}
+  GHCR: ghcr.io/offensive-vk/awesomescripts
   USERNAME: ${{ secrets.DOCKER_USER }}
   PASSWORD: ${{ secrets.DOCKER_TOKEN }}
   DOCKERFILE: ./Dockerfile
+  
 jobs:
   push:
     runs-on: ubuntu-latest
@@ -28,6 +29,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Extract Docker Metadata
         id: meta
         uses: docker/metadata-action@96383f45573cb7f253c731d3b3ab81c87ef81934 # v5.0.0
@@ -38,11 +40,13 @@ jobs:
           tags: |
             type=ref,event=pr
             type=edge
+            latest
           flavor: |
             latest=true
           labels: |
             org.opencontainers.image.title=AwesomeScripts
             org.opencontainers.image.vendor=Vedansh
+            org.opencontainers.image.description=Special Repository for Custom Scripts / Configs and Programs of Various Programming Languages.
             
       - name: Install Cosign
         if: github.event_name != 'pull_request'
@@ -80,7 +84,7 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/amd64/v3
+          platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/amd64/v3,linux/amd64/v2
 
       - name: Check Manifests
         if: github.event_name != 'pull_request'
@@ -99,7 +103,5 @@ jobs:
       - name: Verify Tags and Labels
         run: |
           echo "## Github Action Summary - Docker CI " >> $GITHUB_STEP_SUMMARY
-          echo "${{ steps.meta.outputs.tags }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.meta.outputs.labels }} " >> $GITHUB_STEP_SUMMARY
           echo "*** VERIFICATION COMPLETED ***"
-          echo "Job Finished!"
