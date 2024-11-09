@@ -17,6 +17,7 @@ env:
   USERNAME: ${{ secrets.DOCKER_USER }}
   PASSWORD: ${{ secrets.DOCKER_TOKEN }}
   DOCKERFILE: ./Dockerfile
+  
 jobs:
   push:
     runs-on: ubuntu-latest
@@ -38,6 +39,7 @@ jobs:
           tags: |
             type=ref,event=pr
             type=edge
+            latest
           flavor: |
             latest=true
           labels: |
@@ -99,7 +101,5 @@ jobs:
       - name: Verify Tags and Labels
         run: |
           echo "## Github Action Summary - Docker CI " >> $GITHUB_STEP_SUMMARY
-          echo "${{ steps.meta.outputs.tags }}" >> $GITHUB_STEP_SUMMARY
           echo "${{ steps.meta.outputs.labels }} " >> $GITHUB_STEP_SUMMARY
           echo "*** VERIFICATION COMPLETED ***"
-          echo "Job Finished!"
