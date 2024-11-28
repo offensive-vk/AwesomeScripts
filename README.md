@@ -16,12 +16,13 @@
   </a>
 </div>
     
-# AwesomeScripts - Custom Configs and Various Templates
+# AwesomeScripts - Configs and Various Templates
 
-Special Repo for Custom Scripts and Offensive / Biased Programs of Various Programming Languages.
-More Tool Configs are being added. Stay tuned for future updates.!
-Kindly Double Check and Verify twice before running or executing any script or file in your computer.
-I would say try everything in a sandbox environment. *(VMs or Containers)*
+Explore a curated collection of custom scripts and templates designed for various programming languages. This repository provides a platform for developers to share and experiment with innovative tools, including some that may be considered offensive or biased.
+
+Find scripts tailored to your preferred programming language.
+New tool configurations and scripts are added regularly.
+Always exercise caution and verify the intended behavior of any script before execution. It's highly recommended to test scripts in a controlled environment like a virtual machine or container.
 
 ## Quick Links and Navigation 🧭
 
@@ -105,7 +106,7 @@ Contributions to this repository are welcome! If you'd like to contribute:
 2. Create a new branch (`git checkout -b feature/your-feature`).
 3. Commit your changes (`git commit -am 'Add some feature'`).
 4. Push to the branch (`git push origin feature/your-feature`).
-5. Create a new Pull Request.
+5. Create a new Pull Request and wait for approval.
 
 ---
 
