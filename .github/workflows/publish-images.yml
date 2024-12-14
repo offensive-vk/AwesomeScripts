@@ -46,7 +46,7 @@ jobs:
           labels: |
             org.opencontainers.image.title=AwesomeScripts
             org.opencontainers.image.vendor=Vedansh
-            org.opencontainers.image.description=Special Repository for Custom Scripts / Configs and Programs of Various Programming Languages.
+            org.opencontainers.image.description=My Special Repository for Custom Scripts / Configs and Programs of Various Programming Languages.
             
       - name: Install Cosign
         if: github.event_name != 'pull_request'
